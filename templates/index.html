@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emotion Music Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <img src="{{ url_for('video_feed') }}" id="video-stream" />
+        </div>
+        <div class="suggestion-box" id="suggestion-box">
+            <div id="suggestion-text">Detecting emotion...</div>
+        </div>
+    </div>
+
+    <button onclick="stopMusic()">Stop Music</button>
+
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
